@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>productos</title>
+    <!--Estilos de boostrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="css/styleproducts.css" />
+
+
+</head>
+
+<body>
+    <div class="svg-wrap">
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-left"
+                d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z">
+            </path>
+        </svg>
+
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-right"
+                d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z">
+            </path>
+        </svg>
+    </div>
+
+
+    <!-- CONTENIDO DEL MAIN
+  <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+        <!-- NAVEGACION -->
+        <nav class="navbar navbar-fixed-top navbar-default bottom">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="images/logo-1.svg" alt="">
+                </div><!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#portfolio">PRODUCTOS</a></li>
+                        <li><a href="./contacto.html">CONTACTO</a></li>
+                        <li><a href="./inicio_sesion.html">LOGIN</a></li>
+                    </ul>
+                </div> <!-- /.navbar-collapse -->
+            </div> <!-- /.container -->
+        </nav>
+
+        <!-- SLIDER -->
+        <div class="header-slide">
+            <section>
+                <div id="loader" class="pageload-overlay"
+                    data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60"
+                        preserveAspectRatio="none">
+                        <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z" />
+                    </svg>
+                </div> <!-- /.pageload-overlay -->
+
+                <div class="image-slide bg-fixed">
+                    <div class="overlay">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="slider-content">
+                                        <h1></h1>
+                                        <p>Somos una empresa dedicada a la venta y distrbución de poductos artesanales
+                                            de comunidades
+                                            indígenas de Colombia</p>
+                                    </div>
+
+                                </div> <!-- /.col-md-12 -->
+                            </div> <!-- /.row -->
+                        </div> <!-- /.container -->
+                    </div> <!-- /.overlay -->
+                </div> <!-- /.image-slide -->
+
+                <nav class="nav-slide">
+                    <a class="prev" href="#prev">
+                        <span class="icon-wrap">
+                            <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                                <use xlink:href="#arrow-left">
+                            </svg>
+                        </span>
+                        <div>
+                            <span>Prev Photo</span>
+                            <h3>...</h3>
+                            <p>...</p>
+                            <img alt="Previous thumb">
+                        </div>
+                    </a>
+                    <a class="next" href="#next">
+                        <span class="icon-wrap">
+                            <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                                <use xlink:href="#arrow-right">
+                            </svg>
+                        </span>
+                        <div>
+                            <span>Next Photo</span>
+                            <h3>...</h3>
+                            <p>...</p>
+                            <img alt="Next thumb">
+                        </div>
+                    </a>
+                </nav>
+            </section>
+
+            <script type="text/javascript">
+                var dataHeader = [{
+                            bigImage: "images/slide-11.jpg",
+                            title: "Artesanales y Ecologicos",
+                            author: "ancestra"
+                        },
+                        {
+                            bigImage: "images/slide-22.jpg",
+                            title: "Producido por nuestras comunidades",
+                            author: "ancestra"
+                        },
+                        {
+                            bigImage: "images/slide-33.jpg",
+                            title: "Hechos a mano",
+                            author: "ancestra"
+                        }
+                    ],
+                    loaderSVG = new SVGLoader(document.getElementById('loader'), {
+                        speedIn: 600,
+                        speedOut: 600,
+                        easingIn: mina.easeinout
+                    });
+                loaderSVG.show()
+            </script>
+
+        </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- product -->
+
+    <section id="product" class="light">
+        <header class="title">
+            <h2>Nuestros <span>productos</span></h2>
+            <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non. Lorem ipsum Fugiat
+                anim labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
+        </header>
+
+        <header class="title">
+            <h2>Accesorios <span>decorativos</span></h2>
+            <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non. Lorem ipsum Fugiat
+                anim
+                labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/aretes-1.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/aretes-2.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/aretes-3.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/aretes-4.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/collares-en-mostacilla-indigenas-1" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/collares-en-mostacilla-indigenas-2.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+                      
+
+
+                    </div>
+
+                </div>
+               
+
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/collares-en-mostacilla-indigenas-3.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/collares-en-mostacilla-indigenas-5.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <header class="title">
+                <h2>Hamacas y  <span>Mochilas</span></h2>
+                <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non.
+                    Lorem
+                    ipsum Fugiat anim
+                    labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
+            </header>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/FOTO WEB 1.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/FOTO WEB 2.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/FOTO WEB 3.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/FOTO WEB 4.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/mochila-17.jpeg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/mochila-7.jpeg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/mochilas-colombianas.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="wrap animated" data-animate="fadeInDown">
+                        <div class="img-product">
+                            <img src="images/wayuu-mochila-28.jpg" alt="" class="img-circle">
+                        </div>
+
+                        <h3>Diseñado por</h3>
+                        <h5>lorem.</h5>
+
+                        <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                            aliqua.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <header class="title">
+                <h2>Instrumentos  <span>Musicales</span></h2>
+                <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non.
+                    Lorem
+                    ipsum Fugiat anim
+                    labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
+            </header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/flautas.jpg" alt="" class="img-circle">
+                            </div>
+
+                            <h3>Flautas</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/p-7.png" alt="Bombo leguero" class="img-circle">
+                            </div>
+
+                            <h3>Bombo leguero</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/Palo-de-lluvia.jpg" alt="Palo-de-lluvia" class="img-circle">
+                            </div>
+
+                            <h3>Palo de lluvia</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/Sonajeros.jpg" alt="Sonajeros" class="img-circle">
+                            </div>
+
+                            <h3>Sonajeros</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <header class="title">
+                    <h2>Pulseras y <span>Ropa</span></h2>
+                    <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non.
+                        Lorem
+                        ipsum Fugiat anim
+                        labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
+                </header>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/Pulsera-indigena-colombiano.png" alt="Pulseras Arhuacas" class="img-circle">
+                            </div>
+
+                            <h3>Pulseras Arhuacas</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/p-2.png" alt="Pulseras Emberas" class="img-circle">
+                            </div>
+
+                            <h3>Pulsera Embera</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/Manillas-2.jpg" alt="Pulsera-indigena-colombiano" class="img-circle">
+                            </div>
+
+                            <h3>Pulsera</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/Manillas-1.jpg" alt="Pulsera-indigena-colombiano" class="img-circle">
+                            </div>
+
+                            <h3>Pulsera indigena</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/p-3.png" alt="" class="img-circle">
+                            </div>
+
+                            <h3>Manta Arhuaca</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/ruanas.jpg" alt="Ruanas" class="img-circle">
+                            </div>
+
+                            <h3>Ruanas nariño</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/atuendos-g.jpg" alt="atuendos" class="img-circle">
+                            </div>
+
+                            <h3>Tradicional</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="wrap animated" data-animate="fadeInDown">
+                            <div class="img-product">
+                                <img src="images/p-4.jpg" alt="" class="img-circle">
+                            </div>
+
+                            <h3>Para hombres</h3>
+                            <h5>lorem.</h5>
+
+                            <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea
+                                aliqua.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <!-- /.container -->
+    </section>
+
+    </section>
+
+
+    <!-- FOOTER CONTACT -->
+
+    <section id="contact" class="dark">
+        <header class="title">
+            <h2>Nuestro <span>Contacto</span></h2>
+            <p>Lorem ipsum Esse esse cillum nisi cillum deserunt tempor ut pariatur qui officia. Lorem ipsum Magna eu
+                irure
+                sint occaecat cupidatat dolore minim irure cillum.</p>
+        </header>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 animated" data-animate="fadeInLeft">
+                    <address>
+                        <span><i class="fa fa-map-marker fa-lg"></i> Av Siempre Viva Casa 58, Springfield</span>
+                        <span><i class="fa fa-phone fa-lg"></i> (+57) 601-1234567</span>
+                        <span><i class="fa fa-envelope-o fa-lg"></i> <a
+                                href="mailto:contact@example.com">contacto@ancestra.com</a></span>
+                        <span><i class="fa fa-globe fa-lg"></i> <a
+                                href="http://support.example.com">soporte@ancestra.com</a></span>
+                    </address>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    </div><!-- /.container-fluid -->
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

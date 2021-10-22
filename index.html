@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ancestra</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- enlace cdn awesome recursos  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- enlace archivo css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- inicia header  -->
+    <header class="header">
+
+        <div class="header-1">
+            <a href="#" class="logo"> <i class="image"><img src="images/logo-1.svg" alt=""></i></a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Buscar productos..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">INICIO</a>
+                <a href="#featured">DESTACADOS</a>
+                <a href="#arrivals">RECIENTES</a>
+                <a href="#reviews">RESEÑAS</a>
+                <a href="#blogs">NOSOTROS</a>
+                <a href="./productos.html" target="_blank">PRODUCTOS</a>
+                <a href="./formulariologin.html">DASHBOARD</a>
+            </nav>
+        </div>
+
+    </header>
+    <!-- fin header -->
+
+    <!-- navegación  -->
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-id-card"></a>
+    </nav>
+
+    <!-- formularios  -->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+        <form action="">
+            <h3>INICIAR SESIÓN</h3>
+            <span>Usuario:</span>
+            <input type="email" name="" class="box" placeholder="Ingrese su correo*" id="">
+            <span>Contraseña:</span>
+            <input type="password" name="" class="box" placeholder="Ingrese su contraseña*" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> Recordar contraseña.</label>
+            </div>
+            <input type="submit" value="ENVIAR" class="btn">
+            <p>¿Olvidó su contraseña?<a href="#"> Ingresa Aquí</a></p>
+            <p>¿No tienes una cuenta?<a href="registro.html"> Regístrate Aquí</a></p>
+        </form>
+    </div>
+
+    <!-- inicia home  -->
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Descuento del 25% <br> en éstos productos.</h3>
+                <p>Nunca sabes lo que quieres hasta que lo ves
+                    en oferta. <br> <i>Promoción válida hasta el 15 de octubre del 2021 <br> o hasta acabar CICLO 3</i>
+                </p>
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+
+            <div class="swiper promociones-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="images/art-1.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/art-2.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/art-3.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/art-4.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/art-5.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="images/art-6.png" alt=""></a>
+                </div>
+                <img src="images/repisa-1.png" class="stand" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- fin home  -->
+
+    <!-- inicia íconos  -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-shipping-fast"></i>
+            <div class="content">
+                <h3>Envío grátis</h3>
+                <p>Aplica para compras <br> superiores a $ 100.000</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>Pago seguro</h3>
+                <p>Pago 100% seguro</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>Fáciles devoluciones</h3>
+                <p>Tienes 10 días hábiles para <br> realizar tus devoluciones</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>Soporte 24/7</h3>
+                <p>Llámanos en <br> cualquier momento</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- fin íconos -->
+
+    <!-- inicia destacados  -->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>PRODUCTOS DESTACADOS</span> </h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Bolso de Fique</h3>
+                        <div class="price">$59.000 <span>$79.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jarrón Decorativo</h3>
+                        <div class="price">$49,000 <span>$59.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Sombrero Prensado</h3>
+                        <div class="price">$59.000 <span>$69.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Mochila Wayú</h3>
+                        <div class="price">$99.000 <span>$119.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jarrón Madera</h3>
+                        <div class="price">$199.000 <span>$229.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Zampoña Andina</h3>
+                        <div class="price">$39.000 <span>$49.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-7.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Ruana Tradicional</h3>
+                        <div class="price">$239.000 <span>$269.000 </span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-8.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Olla de Barro</h3>
+                        <div class="price">$69.000 <span>$79.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-9.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Mochila Tradicional</h3>
+                        <div class="price">$49.000 <span>$69.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/art-10.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Mochila Arhuaca</h3>
+                        <div class="price">$209.000 <span>$239.000</span></div>
+                        <a href="#" class="btn">Añadir al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+    <!-- fin destacados -->
+
+    <!-- inicia contacto -->
+    <section class="contact">
+
+        <form action="">
+            <h3>Contáctanos o déjanos <br> tus comentarios.</h3>
+            <input type="name" name="" placeholder="Ingrese su nombre*" id="" class="box">
+            <input type="email" email="" placeholder="Ingrese su correo*" id="" class="box">
+            <input type="message" email="" placeholder="Ingrese su mensaje*" id="" class="box">
+            <input type="submit" value="ENVIAR" class="btn">
+        </form>
+
+    </section>
+    <!-- fin contacto -->
+
+    <!-- inicia recientes  -->
+    <section class="arrivals" id="arrivals">
+
+        <h1 class="heading"> <span>RECIENTEMENTE AGREGADOS</span> </h1>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-11.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Bombo Tradicional</h3>
+                        <div class="price">$ 199.000 <span>$129.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-12.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jarrón Decorativo</h3>
+                        <div class="price">$49.000 <span>$59.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-13.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Flauta de Pan</h3>
+                        <div class="price">$29.000 <span>$39.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-14.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Taza Decorativa</h3>
+                        <div class="price">$49.000 <span>$59.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-15.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Bombo Leguero</h3>
+                        <div class="price">$179.000 <span>$199.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-16.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Canasto Siapedara</h3>
+                        <div class="price">$99.000 <span>$119.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-17.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jarrón Decorativo</h3>
+                        <div class="price">$79.000 <span>$89.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-18.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jarra de Barro</h3>
+                        <div class="price">$29.000 <span>$39.000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-19.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Vasija de Barro</h3>
+                        <div class="price">$29.900 <span>$39.900</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/art-20.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Canasta de Mimbre</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- fin recientes -->
+
+    <!-- inicia oferta  -->
+    <section class="deal">
+
+        <div class="content">
+            <h3>Oferta del día!!</h3>
+            <h1>Descuento del 50%</h1>
+            <p>Aprovecha y enamórate de nuestras Mega Ofertas!! <br> <i>Aplica solo para dos unidades por persona.</i>
+            </p>
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>
+
+        <div class="image">
+            <img src="images/art-16.png" alt="">
+        </div>
+
+    </section>
+    <!-- fin oferta -->
+
+    <!-- inicia calificaciones  -->
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"> <span>CALIFICACIONES Y OPINIONES</span> </h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="images/Andres Lopez.png" alt="">
+                    <h3>Carlos López</h3>
+                    <p>Muy bonitas las artesanías y todo, pero en realidad lo que estoy buscando es a alguien que me
+                        quiera de verdad. :( </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/yo.png" alt="">
+                    <h3>Luis Moreno</h3>
+                    <p>Gran trabajo de las comunidades, muy buena gestión, debemos seguir apoyándolos
+                        y difundiendo su trabajo y su cultura :) </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/mauricio Galeano.jpeg" alt="">
+                    <h3>Mauricio Galeano</h3>
+                    <p>Muy bonitas las artesanías y todo, pero en realidad lo que estoy buscando es a alguien que me
+                        quiera de verdad. :( </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/Socrates.png" alt="">
+                    <h3>Sócrates Muñoz</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Expedita laborum voluptates voluptate fugiat est aperiam commodi nulla</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/vladimir.jpeg" alt="">
+                    <h3>Vladimir Imbachi</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam
+                        at sint, eos ex similique facere hic.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- fin calificaciones -->
+
+    <!-- inicia blogs o  sobre nosotros  -->
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> <span>SOBRE NOSOTROS</span> </h1>
+
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/blog-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>QUIENES SOMOS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/blog-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>VENDE CON NOSOTROS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/blog-3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>NUESTRAS POLÍTICAS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- fin blogs o sobre nosotros -->
+
+    <!-- inicia footer  -->
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>ENLACES</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Inicio </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Destacados </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Recientes </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Reseñas </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Nosotros </a>
+            </div>
+
+            <div class="box">
+                <h3>EXTRAS</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Mi cuenta </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Mi carrito </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Mis favoritos </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Contáctanos </a>
+            </div>
+
+            <div class="box">
+                <h3>SOPORTE</h3>
+                <a href="#"> <i class="fas fa-phone"></i> (+57) 310 406 7006 </a>
+                <a href="#"> <i class="fas fa-phone"></i> (+57) 300 445 9700 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> ancestra@ancestra.com </a>
+            </div>
+
+            <div class="box">
+                <img src="images/logo-3.svg" class="imagotipo" alt="">
+                <!-- <a href="#"> <i class="fas fa-map-marker-alt"></i> Colombia </a> -->
+            </div>
+        </div>
+
+        <div class="credit">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <!-- <a href="#" class="fab fa-twitter"></a> -->
+                <a href="#" class="fab fa-instagram"></a>
+                <!-- <a href="#" class="fab fa-linkedin"></a> -->
+                <a href="#" class="fab fa-pinterest"></a>
+            </div><br>
+            <p>Copyright 2021 <span>Ancestra</span> | Todos los derechos reservados.</p>
+        </div>
+
+    </section>
+    <!-- fin footer -->
+
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
